@@ -29,16 +29,11 @@ function index(req, res) {
     res.redirect('/skills');
   }
 
-  function edit(req, res) {
-    res.render('skills/edit');
-  }
-
   module.exports = {
     index: index,
     show: show,
     new: newSkill,
     create,
-    delete: deleteSkill,
-    edit
+    delete: deleteSkill
   };
   
